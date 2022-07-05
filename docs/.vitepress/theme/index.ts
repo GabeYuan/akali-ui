@@ -1,4 +1,7 @@
 import DefaultTheme from 'vitepress/theme'
+import './demo-block.scss'
+import '../../../src/index.scss'
+
 // import './custom.css'
 import HelloWorld from '../../../src/components/HelloWorld.vue'
 import Test from '../../../src/components/Test'

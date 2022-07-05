@@ -52,7 +52,9 @@ export default {
     config: md => {
       // use more markdown-it plugins!
       const { demoBlockPlugin } = require('vitepress-theme-demoblock')
-      md.use(demoBlockPlugin)
+      md.use(demoBlockPlugin, {
+        cssPreprocessor: 'sass'
+      })
     }
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <HelloWorld msg="sdfsd" />
+  <HelloWorld />
   <Test />
 </template>
 
