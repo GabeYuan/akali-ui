@@ -23,7 +23,7 @@
     <JuButton size="large">确定</JuButton>
   </div>
   <div>
-    <JuButton type="primary" size="small">确定</JuButton>
+    <JuButton type="primary" size="small" @click="btnClick">确定</JuButton>
     <JuButton type="primary" size="medium">确定</JuButton>
     <JuButton type="primary" size="large">确定</JuButton>
   </div>
@@ -32,10 +32,19 @@
     <JuButton type="text" size="medium">确定</JuButton>
     <JuButton type="text" size="large">确定</JuButton>
   </div>
+  <div>禁用</div>
+  <div>
+    <JuButton disabled @click="btnClick">确定</JuButton>
+    <JuButton type="primary" disabled @click="btnClick">确定</JuButton>
+    <JuButton type="text" disabled @click="btnClick">确定</JuButton>
+  </div>
 </template>
 
 <script setup lang="ts">
 // import { Ref } from 'vue'
+const btnClick = () => {
+  console.log('clicked')
+}
 </script>
 
 <style>

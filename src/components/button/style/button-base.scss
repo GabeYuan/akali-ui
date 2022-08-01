@@ -22,6 +22,10 @@
       $s-animation-ease-in-out-smooth,
     border-color $s-animation-duration-slow $s-animation-ease-in-out-smooth,
     color $s-animation-duration-slow $s-animation-ease-in-out-smooth;
+  // 禁用状态
+  &[disabled]{
+    @apply cursor-not-allowed
+  }
 }
 
 // 新增一个“多态”的mixin，后续size等其他样式也可以复用
