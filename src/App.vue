@@ -38,6 +38,9 @@
     <JuButton type="primary" disabled @click="btnClick">确定</JuButton>
     <JuButton type="text" disabled @click="btnClick">确定</JuButton>
   </div>
+  <div>块级按钮</div>
+  <JuButton type="primary" size="medium" block>确定</JuButton>
+  <JuButton size="medium" block>取消</JuButton>
 </template>
 
 <script setup lang="ts">
