@@ -1,5 +1,5 @@
 import { App } from 'vue'
-import Button from './src/button'
+import Button from './src/Button'
 
 // 具名导出
 export { Button }
