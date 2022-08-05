@@ -6,6 +6,7 @@
       <h3>hhh</h3>
     </template>
   </Test> -->
+  <Test msg="hello"></Test>
   <!-- 1.primary, secondary,text
     2.尺寸 size
     3.disabled
@@ -44,6 +45,7 @@
 </template>
 
 <script setup lang="ts">
+import Test from './components/Test'
 // import { Ref } from 'vue'
 const btnClick = () => {
   console.log('clicked')
