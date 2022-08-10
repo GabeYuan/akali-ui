@@ -18,11 +18,11 @@ describe('button ui', () => {
     const { getByText } = render(Button, {
       slots: {
         default() {
-          return 'hahaha'
+          return '点一下'
         }
       }
     })
-    getByText('hahaha')
+    getByText('点一下')
   })
 
   // 按钮类型
