@@ -10,7 +10,6 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "esModuleInterop": true,
-    "allowJs": true,
     "lib": [
       "esnext",
       "dom"
@@ -26,7 +25,8 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "scripts/**/*.ts",
-    "docs/.vitepress/theme"
+    "docs/.vitepress/theme",
+    "scripts/entry.ts"
   ],
   "references": [
     {

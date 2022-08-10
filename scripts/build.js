@@ -1,4 +1,5 @@
 const path = require('path')
+const fsExtra = require('fs-extra')
 // 引入vite导出的build方法，用它来创建
 const { defineConfig, build } = require('vite')
 const vue = require('@vitejs/plugin-vue')
@@ -46,8 +47,33 @@ const buildAll = async () => {
   )
 }
 
+// 创建package.json文件
+const createPackageJson = () => {
+  const fileStr = `{
+    "name": "juice-ui",
+    "version": "0.0.0",
+    "main": "juice-ui.umd.js",
+    "module": "juice-ui.es.js",
+    "github": "",
+    "description": "我的组件库",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/GabeYuan/juice-ui.git"
+    },
+    "keywords": ["vue3", "组件库", "tsx", "UI"],
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/GabeYuan/juice-ui/issues"
+    }
+  }`
+
+  fsExtra.outputFile(path.resolve(outputDir, 'package.json'), fileStr, 'utf-8')
+}
+
 const buildLib = async () => {
   await buildAll()
+
+  createPackageJson()
 }
 
 buildLib()

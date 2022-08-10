@@ -9,7 +9,7 @@ export default defineComponent({
 
     return () => {
       const defaulSlot = slots.default ? slots.default() : '按钮'
-      // block
+      // is block or not
       const blockCls = block.value ? 's-btn--block' : ''
       return (
         <button
