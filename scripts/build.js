@@ -40,8 +40,8 @@ const buildAll = async () => {
         rollupOptions,
         lib: {
           entry: entryFile,
-          name: 'juice-ui',
-          fileName: 'juice-ui',
+          name: 'akali-ui',
+          fileName: 'akali-ui',
           formats: ['es', 'umd']
         },
         outDir: outputDir
@@ -54,20 +54,20 @@ const buildAll = async () => {
 // 创建package.json文件
 const createPackageJson = name => {
   const fileStr = `{
-    "name": "${name ? name : 'juice-ui'}",
+    "name": "${name ? name : 'akali-ui'}",
     "version": "0.0.0",
-    "main": "${name ? 'index' : 'juice-ui'}.umd.js",
-    "module": "${name ? 'index' : 'juice-ui'}.es.js",
+    "main": "${name ? 'index' : 'akali-ui'}.umd.js",
+    "module": "${name ? 'index' : 'akali-ui'}.es.js",
     "github": "",
     "description": "我的组件库",
     "repository": {
       "type": "git",
-      "url": "git+https://github.com/GabeYuan/juice-ui.git"
+      "url": "git+https://github.com/GabeYuan/akali-ui.git"
     },
     "keywords": ["vue3", "组件库", "tsx", "UI"],
     "license": "ISC",
     "bugs": {
-      "url": "https://github.com/GabeYuan/juice-ui/issues"
+      "url": "https://github.com/GabeYuan/akali-ui/issues"
     }
   }`
   // 存在包名称，给单组件生成package.json文件

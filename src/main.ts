@@ -6,6 +6,6 @@ import Button from './button'
 
 createApp(App).use(Button).mount('#app')
 
-// import JuiceUI from '../build/'
+// import AkaliUi from '../build/'
 
-// createApp(App).use(JuiceUI).mount('#app')
+// createApp(App).use(AkaliUi).mount('#app')
